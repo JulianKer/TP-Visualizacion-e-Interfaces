@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <header class="header">
+        <a class="nav-logo" href="index.html">VTV</a>
+        <nav class="nav">
+            <a class="nav-link">Inicio</a>
+            <a class="nav-link">Mis vehiculos</a>
+            <a class="nav-link">Mis turnos</a>
+            <a class="nav-link">Ayuda</a>
+        </nav>
+        <a class="nav-salir" href="index.html">Salir</a>
+    </header>
+    <main class="auth-container">
+        <h2 class="register-title">Registrate con tus datos para comenzar a operar</h2>
+        <form class="register-form">
+            <div class="nombre-completo">
+                <div class="campo-register">
+                    <label>Nombre</label>
+                    <input class="input-auth input-nombre" name="nombre" type="text" required>
+                </div>
+                <div class="campo-register"> 
+                    <label>Apellido</label>
+                    <input class="input-auth input-nombre" name="Apellido" type="text" required>
+                </div>    
+                <div class="campo-register">
+                    <label>D.N.I</label>
+                    <input class="input-auth input-nombre" type="number" name="dni" required>
+                </div>
+            </div>
+            <div class="campo-register">
+                <label>Email</label>
+                <input class="input-auth" type="email" name="email" required>
+            </div>
+            <div class="campo-password">
+                <div class="campo-register">
+                    <label>Contraseña</label>
+                    <input class="input-auth input-password" type="password" name="contraseña" required>
+                </div>
+                <div class="campo-register">
+                    <label>Repetir contraseña</label>
+                    <input class="input-auth input-password" type="password" name="repetirContraseña" required>
+                </div>
+            </div>
+
+            <a class="auth-btn" type="submit" href="login.html">Registrarse</a>
+            <a href="login.html" class="link-login">Ya tienes una cuenta? Inicia sesion!</a>
+        </form>
+    </main>
+    <footer>
+        <a class="footer-logo" href="index.html">VTV</a>
+        <nav class="footer-nav">
+            <a target="_blank" class="footer-link" href="https://web.whatsapp.com">Whatsapp</a>
+            <a target="_blank" class="footer-link" href="https://www.instagram.com">Instagram</a>
+            <a target="_blank" class="footer-link" href="https://mail.google.com">Email</a>
+        </nav>
+        <p class="footer-copy">&copy; VTV Website. Todos los derechos reservados. 2024.</p>
+    </footer>
+</body>
+</html>
