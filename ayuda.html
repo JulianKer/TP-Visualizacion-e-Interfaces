@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda - VTV</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/ayuda.css">
+    <link rel="icon" href="iconos/logo_vtv_pestaña.png">
+
+    <script src="js/salir.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a class="nav-logo" href="homeConUser.html">
+            <img src="iconos/logo_vtv_nav.png" alt="logo_vtv">
+        </a>
+        <nav class="nav">
+            <a class="nav-link" href="homeConUser.html">Inicio</a>
+            <a class="nav-link">Mis vehiculos</a>
+            <a class="nav-link">Mis turnos</a>
+            <a class="nav-link" href="perfil.html">Perfil</a>
+            <a class="nav-link" href="ayuda.html">Ayuda</a>
+        </nav>
+        <a class="nav-salir" href="#" id="btn-salir">Salir</a>
+    </header>
+    <main class="main">
+        <section class="sec-eframe">
+            <h3 class="eframe-titulo">¿Cómo solicitar un turno?</h3>
+            <iframe name="video_explicativo_de_como_solicitar_un_turno" class="eframe" width="560" height="315" src="https://www.youtube.com/embed/mpVhYzjJmR8?si=WNbtMU0QA-re1gZz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section class="sec-desc"> 
+
+            <h3 class="desc-titulo">Información de ayuda</h3>
+
+            <div class="contenedor-pdfs">
+                <div class="pdf1">
+                    <div>
+                        <img src="iconos/iconoPdf.png" alt="Icono PDF" class="icono-pdf">
+                        <p>Documentación</p>
+                    </div>
+                    <a href="Wireframes.pdf" name="descargar_pdf_documentacion" target="_blank">
+                        <img src="iconos/iconoDescarga.svg" alt="Icono descargar" class="icono-desc" title="Descargar PDF">
+                    </a>
+                </div>
+
+                <div class="pdf2">
+                    <div>
+                        <img src="iconos/iconoPdf.png" alt="Icono PDF" class="icono-pdf">
+                        <p>Pasos para solicitar un turno para la VTV</p>
+
+                    </div>
+                    <a href="Wireframes.pdf" name="descargar_pdf_pasos_para_solicitar_turno" target="_blank">
+                        <img src="iconos/iconoDescarga.svg" alt="Icono descargar" class="icono-desc" title="Descargar PDF">
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <section class="pop-up-salir">
+        <section class="pop-up">
+            <img src="iconos/checkBien.png" alt="" class="pop-up-check">
+            <p class="pop-up-mensaje">¿Seguro desea salir?</p>
+            <a href="index.html" class="pop-up-btn">Aceptar</a>  <!-- ACA CAMBIAR EL HREF AL HOME CUANDO LO HAGA-->
+            <a href="ayuda.html" class="pop-up-btn">Cancelar</a>  <!-- ACA CAMBIAR EL HREF AL HOME CUANDO LO HAGA-->
+        </section>
+    </section>
+
+    <footer>
+        <a class="footer-logo" href="index.html">VTV</a>
+        <nav class="footer-nav">
+            <a target="_blank" class="footer-link" href="https://web.whatsapp.com">Whatsapp</a>
+            <a target="_blank" class="footer-link" href="https://www.instagram.com">Instagram</a>
+            <a target="_blank" class="footer-link" href="https://mail.google.com">Email</a>
+        </nav>
+        <p class="footer-copy">&copy; VTV Website. Todos los derechos reservados. 2024.</p>
+    </footer>
+</body>
+</html>

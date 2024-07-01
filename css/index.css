@@ -25,7 +25,7 @@ body {
     padding: 0 2rem;
     width: 100%;
     height: 3.5rem;
-    position: absolute;
+    position: sticky;
     top: 0;
     background-color: rgb(1, 1, 66);
 }
@@ -33,6 +33,10 @@ body {
 .nav-logo {
     font-family: "Libre Baskerville", serif;
     font-size: 1.3rem;
+}
+
+.nav-logo img{
+    width: 2.2em;
 }
 
 .nav-logo, .nav-link, .nav-salir {
@@ -84,4 +88,68 @@ footer {
 
 .footer-link:hover {
     color: #fff;
+}
+
+
+
+
+
+
+
+
+/*------------ POP UP ----------- */
+
+.pop-up-fondo, .pop-up-salir{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up{
+    width: 20em;
+    padding: 2em;
+    border-radius: .5em;
+
+    position: fixed;
+    z-index: 20;
+
+    background-color: #fff;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    & p{
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: .5em;
+    }
+}
+
+.pop-up-check{
+    width: 6em;
+}
+
+.pop-up-btn{
+    width: 100%;
+    padding: 7px 0;
+    background-color: rgba(1, 1, 66);
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    transition: .4s;
+}
+
+.pop-up-btn:hover {
+    background-color: rgba(1, 1, 66, 0.729);
 }

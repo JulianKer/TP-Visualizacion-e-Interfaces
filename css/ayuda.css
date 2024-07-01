@@ -1,0 +1,77 @@
+.main{
+    padding: 5rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5em;
+}
+
+.sec-eframe{
+    display: grid;
+    gap: 2em;
+
+    & .eframe{
+        width: 100%;
+    }
+}
+
+.desc-titulo, .eframe-titulo{
+    font-size: 1.6em;
+}
+
+.sec-desc{
+    display: grid;
+    gap: 2em;
+
+    & .pdf1, .pdf2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2em;
+        padding: .7em;
+
+        border-top: solid 2px #444444;
+        border-bottom: solid 2px #444444;
+
+        transition: all .2s;
+        & div{
+            display: flex;
+            align-items: center;
+            gap: 2em;
+        }
+
+        p{
+            border-left: solid 2px;
+            padding-left: 1em;
+        }
+    }
+
+    .pdf2{
+        border-top: none;
+    }
+
+    .pdf1:hover, .pdf2:hover{
+        background-color: #f2f2f2;
+    }
+}
+
+.icono-desc{
+    width: 1.9em;
+}
+
+.icono-pdf{
+    width: 30px;
+    height: 36px;
+}
+
+
+@media screen and (max-width: 835px) {
+    .main{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .eframe{
+        height: 10em;
+    }
+}

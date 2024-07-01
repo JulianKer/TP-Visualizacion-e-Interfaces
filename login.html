@@ -6,17 +6,20 @@
     <title>Iniciar sesion</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/auth.css">
+    <link rel="icon" href="iconos/logo_vtv_pestaña.png">
+
 </head>
 <body>
     <header class="header">
-        <a class="nav-logo" href="index.html">VTV</a>
+        <!-- <a class="nav-logo" href="index.html">VTV</a>       SI QUIEREN DEJAMOS ESTO EN VEZ DEL LOGO -->  
+        <a class="nav-logo" href="index.html">
+            <img src="iconos/logo_vtv_nav.png" alt="logo_vtv">
+        </a>
         <nav class="nav">
-            <a class="nav-link">Inicio</a>
-            <a class="nav-link">Mis vehiculos</a>
-            <a class="nav-link">Mis turnos</a>
-            <a class="nav-link">Ayuda</a>
+            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="ayudaSinUser.html">Ayuda</a>
         </nav>
-        <a class="nav-salir" href="index.html">Salir</a>
+        <br>
     </header>
     <main class="auth-container login-container">
         <h2 class="login-title">Inicia sesion con tus datos para avanzar</h2>
@@ -29,7 +32,7 @@
                 <label>Contraseña</label>
                 <input class="input-auth" type="password" name="contraseña" required>
             </div>
-            <a class="auth-btn" href="index.html">Iniciar sesion</a>
+            <a class="auth-btn" href="homeConUser.html">Iniciar sesion</a>
             <a href="registro.html" class="link-login">Todavia no tenes una cuenta? Registrate!</a>
         </form>
     </main>

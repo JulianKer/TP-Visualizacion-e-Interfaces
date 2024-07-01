@@ -6,17 +6,22 @@
     <title>Registrarse</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/auth.css">
+    <link rel="icon" href="iconos/logo_vtv_pestaña.png">
+
+    <script src="js/popUp.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <a class="nav-logo" href="index.html">VTV</a>
+        <!-- <a class="nav-logo" href="index.html">VTV</a>       SI QUIEREN DEJAMOS ESTO EN VEZ DEL LOGO -->  
+        <a class="nav-logo" href="index.html">
+            <img src="iconos/logo_vtv_nav.png" alt="logo_vtv">
+        </a>
+
         <nav class="nav">
             <a class="nav-link">Inicio</a>
-            <a class="nav-link">Mis vehiculos</a>
-            <a class="nav-link">Mis turnos</a>
             <a class="nav-link">Ayuda</a>
         </nav>
-        <a class="nav-salir" href="index.html">Salir</a>
+        <br>
     </header>
     <main class="auth-container">
         <h2 class="register-title">Registrate con tus datos para comenzar a operar</h2>
@@ -50,10 +55,19 @@
                 </div>
             </div>
 
-            <a class="auth-btn" type="submit" href="login.html">Registrarse</a>
+            <a class="auth-btn" type="submit" href="#" id="btn-registrarse">Registrarse</a>
             <a href="login.html" class="link-login">Ya tienes una cuenta? Inicia sesion!</a>
         </form>
     </main>
+
+    <section class="pop-up-fondo">
+        <section class="pop-up">
+            <img src="iconos/checkBien.png" alt="" class="pop-up-check">
+            <p class="pop-up-mensaje">¡Usuario registrado correctamente!</p>
+            <a href="login.html" class="pop-up-btn">Aceptar</a>  <!-- ACA CAMBIAR EL HREF AL HOME CUANDO LO HAGA-->
+        </section>
+    </section>
+
     <footer>
         <a class="footer-logo" href="index.html">VTV</a>
         <nav class="footer-nav">

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - VTV</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="icon" href="iconos/logo_vtv_pestaña.png">
+
+    <script src="js/popUp.js" defer></script>
+    <script src="js/salir.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a class="nav-logo" href="homeConUser.html">
+            <img src="iconos/logo_vtv_nav.png" alt="logo_vtv">
+        </a>
+        <nav class="nav">
+            <a class="nav-link" href="homeConUser.html">Inicio</a>
+            <a class="nav-link">Mis vehiculos</a>
+            <a class="nav-link">Mis turnos</a>
+            <a class="nav-link" href="perfil.html">Perfil</a>
+            <a class="nav-link" href="ayuda.html">Ayuda</a>
+        </nav>
+        <a class="nav-salir" href="#" id="btn-salir">Salir</a>
+    </header>
+
+
+    <main class="main">
+        <section class="contenedor-general">
+            <h3 class="titulo-mis-datos">Mis datos</h3>
+            <form class="contenedor-col">
+
+                <section class="col-1">
+                    <div class="contenedor-de-input">
+                        <label for="input-nombre-apellido">Nombre y Apellido</label>
+                        <input class="input-nombre-apellido" type="text" id="input-nombre-apellido" name="nombre_apellido" placeholder="Ingresar nombre y apellido">
+                    </div>
+
+                    <div class="contenedor-de-input">
+                        <label for="input-tipo-dni">Tipo</label>
+                        <select name="tipo_dni" id="input-tipo-dni" class="input-tipo-dni">
+                            <option value="defalut" selected>Seleccione el tipo de documento</option>
+                            <option value="DNI">DNI</option>
+                            <option value="CI">C.I</option>
+                            <option value="PASAPORTE">PASAPORTE</option>
+                        </select>
+                    </div>
+
+                    <div class="contenedor-de-input">
+                        <label for="input-dni">N° Documento</label>
+                        <input type="number" class="input-dni" id="input-dni" name="numero_de_documento" placeholder="Ingrese el número de documento">
+                    </div>
+                </section>
+
+                <section class="col-2">
+                    <div class="contenedor-de-input">
+                        <label for="input-correo">Correo electrónico</label>
+                        <input type="email" name="correo_electronico" id="input-correo" class="input-correo" placeholder="Ingrese su correo">
+                    </div>
+                    <div class="contenedor-de-input">
+                        <label for="input-contraseña">Nueva contraseña</label>
+                        <input type="password" name="contraseña" id="input-contraseña" class="input-contraseña" placeholder="Ingrese su nueva contraseña">
+                    </div>
+                    <div class="contenedor-de-input">
+                        <label for="input-repetir-contraseña">Repetir nueva contraseña</label>
+                        <input type="password" name="repetir-contraseña" class="input-repetir-contraseña" id="input-repetir-contraseña" placeholder="Repita su nueva contraseña">
+                    </div>
+                </section>
+                <section class="contenedor-btns">
+                    <a class="perfil-btn" type="submit" href="homeConUser.html">Cancelar</a>
+                    <a class="perfil-btn" type="submit" href="#" id="guardar-btn">Guardar cambios</a> <!-- ACA NO PONGO EL HREF PQ LO PUSE EN EL JS AL HOME-->
+                </section>
+            </form>
+        </section>
+    </main>
+
+    <section class="pop-up-fondo">
+        <section class="pop-up">
+            <img src="iconos/checkBien.png" alt="" class="pop-up-check">
+            <p class="pop-up-mensaje">¡Datos actualizados correctamente!</p>
+            <a href="homeConUser.html" class="pop-up-btn">Aceptar</a> 
+        </section>
+    </section>
+
+    <section class="pop-up-salir">
+        <section class="pop-up">
+            <img src="iconos/checkBien.png" alt="" class="pop-up-check">
+            <p class="pop-up-mensaje">¿Seguro desea salir?</p>
+            <a href="index.html" class="pop-up-btn">Aceptar</a> 
+            <a href="perfil.html" class="pop-up-btn">Cancelar</a> 
+        </section>
+    </section>
+
+    <footer>
+        <a class="footer-logo" href="index.html">VTV</a>
+        <nav class="footer-nav">
+            <a target="_blank" class="footer-link" href="https://web.whatsapp.com">Whatsapp</a>
+            <a target="_blank" class="footer-link" href="https://www.instagram.com">Instagram</a>
+            <a target="_blank" class="footer-link" href="https://mail.google.com">Email</a>
+        </nav>
+        <p class="footer-copy">&copy; VTV Website. Todos los derechos reservados. 2024.</p>
+    </footer>
+</body>
+</html>
