@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="icon" href="iconos/logo_vtv_pestaña.png">
 
+    <script src="js/nav.js" defer></script>
 </head>
 <body>
     <header class="header">
+        <img src="iconos/menu-hamburguesa.svg" alt="menu_desplegable" id="img-hamburguesa">
+        <div class="menu-desplegable-oculto">
+            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="ayudaSinUser.html">Ayuda</a>
+        </div>
+
         <a class="nav-logo" href="index.html">
             <img src="iconos/logo_vtv_nav.png" alt="logo_vtv">
         </a>
@@ -19,7 +26,9 @@
             <a class="nav-link" href="index.html">Inicio</a>
             <a class="nav-link" href="ayudaSinUser.html">Ayuda</a>
         </nav>
-        <a class="nav-link" href="login.html">Iniciar sesión</a>
+        <a class="nav-link" href="login.html" title="Iniciar sesión">
+            <img src="iconos/login.svg" alt="iniciar_sesion">
+        </a>
     </header>
 
     <main class="main">

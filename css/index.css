@@ -153,3 +153,35 @@ footer {
 .pop-up-btn:hover {
     background-color: rgba(1, 1, 66, 0.729);
 }
+/*-------------------------------------------------*/
+
+
+.menu-desplegable-oculto{
+    background-color: rgba(1, 1, 66);
+    width: 100%;
+    padding: 2em;
+
+    position: absolute;
+    top: 2.7em;
+    left: 0;
+
+    display: none;
+    flex-direction: column;
+    gap: .7em;
+    font-size: 1.2em;
+}
+
+#img-hamburguesa{
+    display: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 835px) {
+    .header .nav{
+        display: none;
+    }
+    #img-hamburguesa{
+        display: block;
+    }
+}

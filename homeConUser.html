@@ -9,9 +9,19 @@
     
     <link rel="icon" href="iconos/logo_vtv_pestaña.png">
     <script src="js/salir.js" defer></script>
+    <script src="js/nav.js" defer></script>
 </head>
 <body>
     <header class="header">
+        <img src="iconos/menu-hamburguesa.svg" alt="menu_desplegable" id="img-hamburguesa">
+        <div class="menu-desplegable-oculto">
+            <a class="nav-link" href="homeConUser.html">Inicio</a>
+            <a class="nav-link">Mis vehiculos</a>
+            <a class="nav-link">Mis turnos</a>
+            <a class="nav-link" href="perfil.html">Perfil</a>
+            <a class="nav-link" href="ayuda.html">Ayuda</a>
+        </div>
+
         <a class="nav-logo" href="homeConUser.html">
             <img src="iconos/logo_vtv_nav.png" alt="logo_vtv">
         </a>
@@ -22,7 +32,9 @@
             <a class="nav-link" href="perfil.html">Perfil</a>
             <a class="nav-link" href="ayuda.html">Ayuda</a>
         </nav>
-        <a class="nav-salir" href="#" id="btn-salir">Salir</a>
+        <a class="nav-salir" href="#" id="btn-salir" title="Cerrar sesión">
+            <img src="iconos/logout.svg" alt="salir">
+        </a>
     </header>
 
     <main class="main">
@@ -104,7 +116,7 @@
 
     <section class="pop-up-salir">
         <section class="pop-up">
-            <img src="iconos/checkBien.png" alt="" class="pop-up-check">
+            <img src="iconos/exclamacion.png" alt="ciudado" class="pop-up-check">
             <p class="pop-up-mensaje">¿Seguro desea salir?</p>
             <a href="index.html" class="pop-up-btn">Aceptar</a>  <!-- ACA CAMBIAR EL HREF AL HOME CUANDO LO HAGA-->
             <a href="homeConUser.html" class="pop-up-btn">Cancelar</a>  <!-- ACA CAMBIAR EL HREF AL HOME CUANDO LO HAGA-->
