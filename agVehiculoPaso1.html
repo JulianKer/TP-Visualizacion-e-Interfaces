@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Vehiculo - VTV</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/agregarVehiculo.css">
+    <link rel="icon" href="iconos/logo_vtv_pestaña.png">
+    <script src="js/salir.js" defer></script>
+    <script src="js/nav.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <img src="iconos/menu-hamburguesa.svg" alt="menu_desplegable" id="img-hamburguesa">
+        <div class="menu-desplegable-oculto">
+            <a class="nav-link" href="homeConUser.html">Inicio</a>
+            <a class="nav-link" href="misVehiculos.html">Mis vehiculos</a>
+            <a class="nav-link" href="misTurnos.html">Mis turnos</a>
+            <a class="nav-link" href="perfil.html">Perfil</a>
+            <a class="nav-link" href="ayuda.html">Ayuda</a>
+        </div>
+
+        <a class="nav-logo" href="homeConUser.html">
+            <img src="iconos/logo_vtv_nav.png" alt="logo_vtv">
+        </a>
+        <nav class="nav">
+            <a class="nav-link" href="homeConUser.html">Inicio</a>
+            <a class="nav-link" href="misVehiculos.html">Mis vehiculos</a>
+            <a class="nav-link" href="misTurnos.html">Mis turnos</a>
+            <a class="nav-link" href="perfil.html">Perfil</a>
+            <a class="nav-link" href="ayuda.html">Ayuda</a>
+        </nav>
+        <a class="nav-salir" href="#" id="btn-salir" title="Cerrar sesión">
+            <img src="iconos/logout.svg" alt="salir">
+        </a>
+    </header>
+    <main class="main">
+        <p class="pasos">Mis vehiculos / Agregar vehiculo / Datos del vehiculo</p>
+        <a class="form-back" href="misVehiculos.html"><i class='bx bx-arrow-back'></i> Atras</a>
+        <section class="data-complete-section">
+            <h3 class="paso-title">1 - Datos del vehiculo</h3>
+            <form class="datos-form">
+                <div class="data-1">
+                    <div class="agregar-campo">
+                        <label>N° Chasis</label>
+                        <input class="agregar-input" type="text">
+                    </div>
+                    <div class="agregar-campo">
+                        <label>Patente</label>
+                        <input class="agregar-input" type="text">
+                    </div>
+                </div>
+                <div class="agregar-bar"></div>
+                <div class="data-2">
+                    <div class="agregar-campo">
+                        <label>Marca</label>
+                        <input class="agregar-input" type="text">
+                    </div>
+                    <div class="agregar-campo">
+                        <label>Modelo</label>
+                        <input class="agregar-input" type="text">
+                    </div>
+                </div>
+            </form>
+            
+            <a href="agVehiculoPaso2.html" class="siguiente-btn">Siguiente</a>
+        </section>
+    </main>
+
+    <section class="pop-up-salir">
+        <section class="pop-up">
+            <img src="iconos/exclamacion.png" alt="ciudado" class="pop-up-check" title="Iniciar sesión">
+            <p class="pop-up-mensaje">¿Seguro desea salir?</p>
+            <a href="index.html" class="pop-up-btn">Aceptar</a>  <!-- ACA CAMBIAR EL HREF AL HOME CUANDO LO HAGA-->
+            <a href="ayuda.html" class="pop-up-btn">Cancelar</a>  <!-- ACA CAMBIAR EL HREF AL HOME CUANDO LO HAGA-->
+        </section>
+    </section>
+
+    <footer>
+        <a class="footer-logo" href="index.html">VTV</a>
+        <nav class="footer-nav">
+            <a target="_blank" class="footer-link" href="https://web.whatsapp.com">Whatsapp</a>
+            <a target="_blank" class="footer-link" href="https://www.instagram.com">Instagram</a>
+            <a target="_blank" class="footer-link" href="https://mail.google.com">Email</a>
+        </nav>
+        <p class="footer-copy">&copy; VTV Website. Todos los derechos reservados. 2024.</p>
+    </footer>
+</body>
+</html>

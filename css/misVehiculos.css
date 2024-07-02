@@ -158,7 +158,11 @@ button{
     }
 }
 
-
+.agregar-turno-btns {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
 
 
 
@@ -212,5 +216,9 @@ button{
     .contenedor-btn-agregar{
         margin-bottom: 1.7em;
     }
+}
+
+.btns-turnos {
+    column-gap: 1rem;
 }
 
