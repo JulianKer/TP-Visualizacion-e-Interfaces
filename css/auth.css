@@ -1,14 +1,10 @@
 .auth-container {
-    height: 105vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-}
-
-.login-container {
-    height: 100vh;
 }
 
 .register-title, .login-title {
