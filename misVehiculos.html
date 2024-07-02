@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Vehículos - VTV</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/misVehiculos.css">
+    
+    <link rel="icon" href="iconos/logo_vtv_pestaña.png">
+
+    <script src="js/nav.js" defer></script>
+    <script src="js/salir.js" defer></script>
+    <script src="js/popUp.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <img src="iconos/menu-hamburguesa.svg" alt="menu_desplegable" id="img-hamburguesa">
+        <div class="menu-desplegable-oculto">
+            <a class="nav-link" href="homeConUser.html">Inicio</a>
+            <a class="nav-link" href="misVehiculos.html">Mis vehiculos</a>
+            <a class="nav-link" href="misTurnos.html">Mis turnos</a>
+            <a class="nav-link" href="perfil.html">Perfil</a>
+            <a class="nav-link" href="ayuda.html">Ayuda</a>
+        </div>
+
+        <a class="nav-logo" href="homeConUser.html">
+            <img src="iconos/logo_vtv_nav.png" alt="logo_vtv">
+        </a>
+        <nav class="nav">
+            <a class="nav-link" href="homeConUser.html">Inicio</a>
+            <a class="nav-link" href="misVehiculos.html">Mis vehiculos</a>
+            <a class="nav-link" href="misTurnos.html">Mis turnos</a>
+            <a class="nav-link" href="perfil.html">Perfil</a>
+            <a class="nav-link" href="ayuda.html">Ayuda</a>
+        </nav>
+        <a class="nav-salir" href="#" id="btn-salir" title="Cerrar sesión">
+            <img src="iconos/logout.svg" alt="salir">
+        </a>
+    </header>
+
+
+
+
+    <main class="main">
+        <section class="contenedor-general">
+            <h2>Mis Vehículos</h2>
+            <section class="contenedor-filas">
+                <section class="fila-1">
+                    <div class="datos-encabezado">
+                        <p>Patente</p>
+                        <p>Marca</p>
+                        <p>Modelo</p>
+                        <p>Año</p>
+                        <p>Estado</p>
+                        <div></div>
+                    </div>
+                </section>
+                <section class="fila-2">
+
+
+                    <div class="auto">
+                        <div class="datos">
+                            <p>EQS-267</p>
+                            <p>Renault</p>
+                            <p>Mégane</p>
+                            <p>2004</p>
+                            <p>Vigente</p>
+                        </div>
+
+                        <div class="botones">
+                            <a href="#" class="a-btn">
+                                <img src="iconos/edit.svg" alt="modificar_vehiculo" class="edicion" title="Editar">
+                            </a>
+                            <button class="btn-modificar" name="modificar_vehiculo">
+                                <img src="iconos/edit.svg" alt="modificar_vehiculo" class="edicion" title="Editar">
+                                Modificar
+                            </button>
+                            <a href="#" class="a-btn boton-eliminar">
+                                <img src="iconos/basura.svg" alt="eliminar_vehiculo" class="basura" title="Eliminar">
+                            </a>
+                            <button class="btn-eliminar boton-eliminar" name="eliminar_vehiculo">
+                                <img src="iconos/basura.svg" alt="eliminar_vehiculo" class="basura" title="Eliminar">
+                                Eliminar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="auto">
+                        <div class="datos">
+                            <p>AB 654 OL</p>
+                            <p>Toyota</p>
+                            <p>Supra MK5</p>
+                            <p>2022</p>
+                            <p>Vencida</p>
+                        </div>
+
+                        <div class="botones">
+                            <a href="#" class="a-btn">
+                                <img src="iconos/edit.svg" alt="modificar_vehiculo" class="edicion" title="Editar"> <!-- este btn es para el responsive, debe llevarte a los pasos de agregar vehiculo que seria el editar tmb-->
+                            </a>
+                            <button class="btn-modificar" name="modificar_vehiculo">               <!-- este btn es el "comun", debe llevarte a los pasos de agregar vehiculo que seria el editar tmb-->
+                                <img src="iconos/edit.svg" alt="modificar_vehiculo" class="edicion" title="Editar">
+                                Modificar
+                            </button>
+                            <a href="#" class="a-btn boton-eliminar">
+                                <img src="iconos/basura.svg" alt="eliminar_vehiculo" class="basura" title="Eliminar"> <!-- este btn es para el responsive-->
+                            </a>
+                            <button class="btn-eliminar boton-eliminar" name="eliminar_vehiculo">    <!-- este btn es el "comun"-->
+                                <img src="iconos/basura.svg" alt="eliminar_vehiculo" class="basura" title="Eliminar">
+                                Eliminar
+                            </button>
+                        </div>
+                    </div>
+                    
+
+
+                </section>
+                <section class="contenedor-btn-agregar">
+                    <a href="#">+ Agregar vehículo</a> <!-- este te tiene que llevar al primer paso para agregar un vehiculo, ponerselo despues al href-->
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <section class="pop-up-fondo">
+        <section class="pop-up">
+            <img src="iconos/exclamacion.png" alt="ciudado" class="pop-up-check">
+            <p class="pop-up-mensaje">¿Desea eliminar el vehículo?</p>
+            <a href="misVehiculos.html" class="pop-up-btn">Aceptar</a>  <!-- este btn deberia eliminar el auto pero no lo hago eso-->
+            <a href="misVehiculos.html" class="pop-up-btn">Cancelar</a> 
+        </section>
+    </section>
+
+    <section class="pop-up-salir">
+        <section class="pop-up">
+            <img src="iconos/exclamacion.png" alt="ciudado" class="pop-up-check">
+            <p class="pop-up-mensaje">¿Seguro desea salir?</p>
+            <a href="index.html" class="pop-up-btn">Aceptar</a> 
+            <a href="misVehiculos.html" class="pop-up-btn">Cancelar</a> 
+        </section>
+    </section>
+
+
+
+
+    <section class="pop-up-salir">
+        <section class="pop-up">
+            <img src="iconos/exclamacion.png" alt="ciudado" class="pop-up-check">
+            <p class="pop-up-mensaje">¿Seguro desea salir?</p>
+            <a href="index.html" class="pop-up-btn">Aceptar</a>  <!-- ACA CAMBIAR EL HREF AL HOME CUANDO LO HAGA-->
+            <a href="homeConUser.html" class="pop-up-btn">Cancelar</a>  <!-- ACA CAMBIAR EL HREF AL HOME CUANDO LO HAGA-->
+        </section>
+    </section>
+
+
+    <footer>
+        <a class="footer-logo" href="index.html">VTV</a>
+        <nav class="footer-nav">
+            <a target="_blank" class="footer-link" href="https://web.whatsapp.com">Whatsapp</a>
+            <a target="_blank" class="footer-link" href="https://www.instagram.com">Instagram</a>
+            <a target="_blank" class="footer-link" href="https://mail.google.com">Email</a>
+        </nav>
+        <p class="footer-copy">&copy; VTV Website. Todos los derechos reservados. 2024.</p>
+    </footer>
+</body>
+</html>

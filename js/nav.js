@@ -11,6 +11,7 @@ imgHamburguesa.addEventListener("click", ()=>{
     }
 })
 
+// este resize lo pongo por si esta abierto el desplegable y se agranda la pantalla, que se cierre
 window.addEventListener("resize", ()=>{
     if(window.innerWidth > 835){
         menuDesplegable.style = "display: none;";

@@ -12,6 +12,7 @@ const popUpBtn = document.querySelector(".pop-up-btn");
 
 const guardarCambiosBtn = document.getElementById("guardar-btn");
 const registrarse = document.getElementById("btn-registrarse");
+const btnsEliminar = document.querySelectorAll(".boton-eliminar");
 
 // ----------------- solo estas dos funciones uso ----------
 function ocultarPopUp() {
@@ -21,9 +22,9 @@ function ocultarPopUp() {
 
 function mostrarPopUp() {
     popUpFondo.style.display = "flex";
+    console.log("aaa")
 }
 // ---------------------------------------------------------
-
 
 
 if (guardarCambiosBtn !== null) {
@@ -34,6 +35,13 @@ if (registrarse !== null) {
     registrarse.addEventListener("click", mostrarPopUp)
 }
 
+console.log(btnsEliminar)
+
+if (btnsEliminar.length > 0) {
+    btnsEliminar.forEach((btn)=>{
+        btn.addEventListener("click", mostrarPopUp)
+    })
+}
 
 
 popUpBtn.addEventListener("click", ocultarPopUp);

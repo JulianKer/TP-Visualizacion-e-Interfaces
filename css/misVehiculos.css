@@ -1,0 +1,208 @@
+.main{
+    padding: 5rem 3rem;
+}
+
+.contenedor-general{
+    border: solid 2px #ddd;
+    border-radius: .3em;
+
+    & >h2{
+        background-color: #ddd;
+        padding: .5em;
+    }
+}
+
+.contenedor-filas{
+    padding: 2em;
+    display: grid;
+    gap: 1.5em;
+}
+
+.fila-1{
+    width: 100%;
+    padding: .3em;
+
+    border: solid 2px #ddd;
+
+    .datos-encabezado{
+        display: flex;
+        justify-content: space-around;
+        font-weight: bold;
+
+        & p{
+            cursor: default;
+        }
+    }
+}
+
+.fila-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+    & img{
+        padding: .2em;
+        border-radius: .3em;
+    }
+    .basura{
+        background-color: rgb(193, 3, 3);  
+    }
+    .edicion{
+        background-color: rgb(1, 1, 66);
+    }
+}
+
+.auto{
+    width: 100%;
+    padding: 1em;
+
+    background-color: #fff;
+    border-bottom: 2px solid rgb(1, 1, 66);
+
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+
+    transition: all.3s;
+
+    & .datos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .botones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .4em;
+    }
+}
+
+.auto:hover{
+    background-color: #ddd;
+
+    & p{
+        font-weight: bold;
+    }
+}
+
+button{
+    width: 7em;
+    font-size: 1em;
+
+    color: #fff;
+    border: none;
+    border-radius: .2em;
+
+    transition: all .4s;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & img{
+        padding: 0;
+    }
+}
+
+.a-btn{
+    display: none;
+}
+
+.btn-modificar{
+    background-color: rgb(1, 1, 66);
+}
+.btn-eliminar{
+    background-color: rgb(193, 3, 3);
+}
+
+.btn-modificar:hover{
+    background-color: rgba(0, 0, 65, 0.91);
+    
+    & img{
+        background-color: transparent;
+    }
+}
+
+.btn-eliminar:hover{
+    background-color: rgba(193, 3, 3, 0.879);
+    
+    & img{
+        background-color: transparent;
+    }
+}
+
+
+
+.contenedor-btn-agregar{
+    display: flex;
+    justify-content: center;
+
+    & a{
+        width: 25%;
+        min-width: 12em;
+        padding: 7px 0;
+        background-color: rgba(1, 1, 66);
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        transition: .4s;
+    }
+
+    :hover{
+        background-color: rgba(1, 1, 66, 0.729);
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 835px) {
+    .main{
+        padding: 4rem 2rem;
+    }
+
+    .contenedor-filas{
+        padding: .2em;
+    }
+
+    .fila-1{
+        justify-content: space-evenly;
+
+        & button{
+            display: none;
+        }
+
+        .datos-encabezado div{
+            display: none;
+        }
+    }
+
+
+    .auto{
+        grid-template-columns: 1fr;
+        gap: 1em;
+
+        & .botones{
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+    .a-btn{
+        display: block;
+    }
+
+    .btn-eliminar, 
+    .btn-modificar{
+        display: none;
+    }
+
+    .contenedor-btn-agregar{
+        margin-bottom: 1.7em;
+    }
+}
+
