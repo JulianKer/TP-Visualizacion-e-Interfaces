@@ -19,8 +19,6 @@ body {
 }
 
 .header {
-    position: relative;
-    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,6 +27,7 @@ body {
     height: 3.5rem;
     position: sticky;
     top: 0;
+    z-index: 5;
     background-color: rgb(1, 1, 66);
 }
 
@@ -173,14 +172,22 @@ footer {
     width: 100%;
     padding: 2em;
 
-    position: absolute;
-    top: 2.7em;
+    position: fixed;
+    top: -10em;
     left: 0;
+    z-index: 2;
 
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: .7em;
     font-size: 1.2em;
+
+    transition: all .3s ease-out;
+}
+
+.mostrar-menu{
+    transition: all .3s ease;
+    top: 2.7em;
 }
 
 #img-hamburguesa{
