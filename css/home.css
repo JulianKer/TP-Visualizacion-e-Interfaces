@@ -3,6 +3,10 @@
 }
 
 
+.part-1{
+    margin-bottom: 8.5em;
+}
+
 .fila-1{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -72,9 +76,39 @@
     gap: 5em;
 
     & .contenedor-bnts{
+        position: relative; /*lo pongo para que el tip no se vaya al body*/
+
         width: 100%;
         display: flex; 
         gap: 1em 3em;
+    }
+
+    .tip{
+        position: absolute;
+        right: 0;
+        bottom: -6em;
+
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        padding: .5em 1em;
+        border-radius: .3em;
+
+        background-color: #D9EDF7;
+        border: solid 1px #CAEAF3;
+        color: #31708F;
+
+        & img{
+            padding: .2em;
+            border: solid 2px #31708F;
+            border-radius: 1em;
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
 
@@ -217,11 +251,22 @@ tbody tr:hover{
     .part-2{
         margin-top: 0;
     }
+
+    .part-1{
+        margin-bottom: 6em;
+    }
+    .tip{
+        bottom: -9em !important;
+    }
 }
 
 @media screen and (max-width: 430px) {
     .main{
         padding: 3em;
+    }
+
+    .que-es-vtv h4{
+        text-align: center;
     }
 
 }

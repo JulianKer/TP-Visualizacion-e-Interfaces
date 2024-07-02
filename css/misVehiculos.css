@@ -181,6 +181,10 @@ button{
         }
     }
 
+    .datos-encabezado,
+    .datos{
+        font-size: .8em;
+    }
 
     .auto{
         grid-template-columns: 1fr;
