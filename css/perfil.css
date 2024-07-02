@@ -1,9 +1,10 @@
 .main{
-    padding: 5rem 3rem;
+    padding: 2.5rem 3rem;
 }
 
 .contenedor-general{
     border: 1px solid rgba(1, 1, 66, 0.456);
+    box-shadow: 0px 0px 2px 0px rgba(1, 1, 66, 0.189);
     padding: 1em;
 }
 
