@@ -1,13 +1,19 @@
 .main{
-    padding: 5rem 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5em;
+    padding: 3.5rem 3rem;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ayuda-bar {
+    height: 100%;
+    width: 1px;
+    background-color: rgba(0, 0, 159, 0.285);
 }
 
 .sec-eframe{
-    display: grid;
-    gap: 2em;
+    width: 50%;
 
     & .eframe{
         width: 100%;
@@ -16,11 +22,36 @@
 
 .desc-titulo, .eframe-titulo{
     font-size: 1.6em;
+    position: relative;
+}
+
+.desc-titulo::before, .eframe-titulo::before {
+    content: "";
+    position: absolute;
+    left: .05rem;
+    width: 45px;
+    height: 2px;
+    background-color: rgba(0, 0, 84, 0.648);
+}
+
+.desc-titulo::before {
+    bottom: 0;
+}
+
+.eframe-titulo::before {
+    bottom:  -.23rem;
+}
+
+.sec-eframe {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .sec-desc{
-    display: grid;
-    gap: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
     & .pdf1, .pdf2{
         display: flex;

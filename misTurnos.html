@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Turnos - VTV</title>
     <link rel="stylesheet" href="css/index.css">
-    
+    <link rel="stylesheet" href="css/misVehiculos.css">
     <link rel="icon" href="iconos/logo_vtv_pestaña.png">
     <script src="js/salir.js" defer></script>
     <script src="js/nav.js" defer></script>
+    <script src="js/popUp.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -37,8 +38,103 @@
     </header>
 
     <main class="main">
-        a
+        <section class="contenedor-general">
+            <h2>Mis Vehículos</h2>
+            <section class="contenedor-filas">
+                <section class="fila-1">
+                    <div class="datos-encabezado">
+                        <p>Patente</p>
+                        <p>Marca</p>
+                        <p>Fecha</p>
+                        <p>Hora</p>
+                        <p>Planta</p>
+                        <div></div>
+                    </div>
+                </section>
+                <section class="fila-2">
+
+
+                    <div class="auto">
+                        <div class="datos">
+                            <p>EQS-267</p>
+                            <p>Renault</p>
+                            <p>17-07-2024</p>
+                            <p>09:00 Hs.</p>
+                            <p>Moron</p>
+                        </div>
+
+                        <div class="botones">
+                            <a href="#" class="a-btn">
+                                <img src="iconos/edit.svg" alt="modificar_vehiculo" class="edicion" title="Editar">
+                            </a>
+                            <button class="btn-modificar" name="modificar_vehiculo">
+                                <img src="iconos/edit.svg" alt="modificar_vehiculo" class="edicion" title="Editar">
+                                Modificar
+                            </button>
+                            <a href="#" class="a-btn boton-eliminar">
+                                <img src="iconos/basura.svg" alt="eliminar_vehiculo" class="basura" title="Eliminar">
+                            </a>
+                            <button class="btn-eliminar boton-eliminar" name="eliminar_vehiculo">
+                                <img src="iconos/basura.svg" alt="eliminar_vehiculo" class="basura" title="Eliminar">
+                                Eliminar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="auto">
+                        <div class="datos">
+                            <p>FKL-166</p>
+                            <p>Toyota</p>
+                            <p>23-07-2024</p>
+                            <p>13:00 Hs.</p>
+                            <p>Haedo</p>
+                        </div>
+
+                        <div class="botones">
+                            <a href="#" class="a-btn">
+                                <img src="iconos/edit.svg" alt="modificar_vehiculo" class="edicion" title="Editar"> <!-- este btn es para el responsive, debe llevarte a los pasos de agregar vehiculo que seria el editar tmb-->
+                            </a>
+                            <button class="btn-modificar" name="modificar_vehiculo">               <!-- este btn es el "comun", debe llevarte a los pasos de agregar vehiculo que seria el editar tmb-->
+                                <img src="iconos/edit.svg" alt="modificar_vehiculo" class="edicion" title="Editar">
+                                Modificar
+                            </button>
+                            <a href="#" class="a-btn boton-eliminar">
+                                <img src="iconos/basura.svg" alt="eliminar_vehiculo" class="basura" title="Eliminar"> <!-- este btn es para el responsive-->
+                            </a>
+                            <button class="btn-eliminar boton-eliminar" name="eliminar_vehiculo">    <!-- este btn es el "comun"-->
+                                <img src="iconos/basura.svg" alt="eliminar_vehiculo" class="basura" title="Eliminar">
+                                Eliminar
+                            </button>
+                        </div>
+                    </div>
+                    
+
+
+                </section>
+                <section class="contenedor-btn-agregar">
+                    <a href="#">+ Agregar vehículo</a> <!-- este te tiene que llevar al primer paso para agregar un vehiculo, ponerselo despues al href-->
+                </section>
+            </section>
+        </section>
     </main>
+
+    <section class="pop-up-fondo">
+        <section class="pop-up">
+            <img src="iconos/exclamacion.png" alt="ciudado" class="pop-up-check">
+            <p class="pop-up-mensaje">¿Desea cancelar el turno?</p>
+            <a href="misVehiculos.html" class="pop-up-btn">Aceptar</a>  <!-- este btn deberia eliminar el auto pero no lo hago eso-->
+            <a href="misVehiculos.html" class="pop-up-btn">Atras</a> 
+        </section>
+    </section>
+
+    <section class="pop-up-salir">
+        <section class="pop-up">
+            <img src="iconos/exclamacion.png" alt="ciudado" class="pop-up-check">
+            <p class="pop-up-mensaje">¿Seguro desea salir?</p>
+            <a href="index.html" class="pop-up-btn">Aceptar</a> 
+            <a href="misVehiculos.html" class="pop-up-btn">Cancelar</a> 
+        </section>
+    </section>
+
 
     <section class="pop-up-salir">
         <section class="pop-up">
