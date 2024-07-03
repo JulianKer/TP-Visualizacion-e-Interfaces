@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar turno rapido - VTV</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/agregarVehiculo.css">
+    <link rel="stylesheet" href="css/nuevoTurno.css">
+    <link rel="icon" href="iconos/logo_vtv_pestaña.png">
+    <script src="js/salir.js" defer></script>
+    <script src="js/nav.js" defer></script>
+</head>
+<body>
+    <div class="menu-desplegable-oculto">
+        <a class="nav-link" href="homeConUser.html">Inicio</a>
+        <a class="nav-link" href="misVehiculos.html">Mis vehiculos</a>
+        <a class="nav-link" href="misTurnos.html">Mis turnos</a>
+        <a class="nav-link" href="perfil.html">Perfil</a>
+        <a class="nav-link" href="ayuda.html">Ayuda</a>
+    </div>
+    <header class="header">
+        <img src="iconos/menu-hamburguesa.svg" alt="menu_desplegable" id="img-hamburguesa">
+
+        <a class="nav-logo" href="homeConUser.html">
+            <img src="iconos/logo_vtv_nav.png" alt="logo_vtv">
+        </a>
+        <nav class="nav">
+            <a class="nav-link" href="homeConUser.html">Inicio</a>
+            <a class="nav-link" href="misVehiculos.html">Mis vehiculos</a>
+            <a class="nav-link" href="misTurnos.html">Mis turnos</a>
+            <a class="nav-link" href="perfil.html">Perfil</a>
+            <a class="nav-link" href="ayuda.html">Ayuda</a>
+        </nav>
+        <a class="nav-salir" href="#" id="btn-salir" title="Cerrar sesión">
+            <img src="iconos/logout.svg" alt="salir">
+        </a>
+    </header>
+    <main class="main">
+        <p class="pasos">Mis turnos / Solicitar turno rapido / Elegir vehiculo</p>
+        <a class="form-back" href="misTurnos.html"><i class='bx bx-arrow-back'></i> Atras</a>
+        <section class="data-complete-section">
+            <h3 class="paso-title">1 - Elegir vehiculo</h3>
+            <form class="datos-form-turno">
+                <div class="data">
+                    <div class="agregar-campo-turnos">
+                        <label class="label-vehiculos" for="tus-vehiculos">Tus vehiculos</label>
+                        <select name="tus-vehiculos" class="agregar-input">
+                            <option value="defalut" selected>Seleccionar vehiculo</option>
+                            <option value="Toyota Supra MK5">Toyota Supra MK5</option>
+                            <option value="Renault Megane">Renault Megane</option>
+                        </select>
+                    </div>
+                    <div>
+                        <a href="agVehiculoPaso1.html" class="agregar-vh-btn">Agregar vehiculo</a>
+                    </div>
+                </div>
+            </form>
+            
+            <a href="nuevoTurnoRapidoP2.html" class="siguiente-btn">Siguiente</a>
+        </section>
+    </main>
+
+    <section class="pop-up-salir">
+        <section class="pop-up">
+            <img src="iconos/exclamacion.png" alt="ciudado" class="pop-up-check" title="Iniciar sesión">
+            <p class="pop-up-mensaje">¿Seguro desea salir?</p>
+            <a href="index.html" class="pop-up-btn">Aceptar</a>  <!-- ACA CAMBIAR EL HREF AL HOME CUANDO LO HAGA-->
+            <a href="ayuda.html" class="pop-up-btn">Cancelar</a>  <!-- ACA CAMBIAR EL HREF AL HOME CUANDO LO HAGA-->
+        </section>
+    </section>
+
+    <footer>
+        <a class="footer-logo" href="index.html">VTV</a>
+        <nav class="footer-nav">
+            <a target="_blank" class="footer-link" href="https://web.whatsapp.com">Whatsapp</a>
+            <a target="_blank" class="footer-link" href="https://www.instagram.com">Instagram</a>
+            <a target="_blank" class="footer-link" href="https://mail.google.com">Email</a>
+        </nav>
+        <p class="footer-copy">&copy; VTV Website. Todos los derechos reservados. 2024.</p>
+    </footer>
+</body>
+</html>

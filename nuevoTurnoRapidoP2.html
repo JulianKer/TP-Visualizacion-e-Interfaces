@@ -12,6 +12,7 @@
     <script src="js/salir.js" defer></script>
     <script src="js/nav.js" defer></script>
     <script src="js/agregar.js" defer></script>
+    <script src="js/turnoRapido.js" defer></script>
 </head>
 <body>
     <div class="menu-desplegable-oculto">
@@ -39,8 +40,8 @@
         </a>
     </header>
     <main class="main">
-        <p class="pasos">Mis turnos / Solicitar turno / Datos del turno</p>
-        <a class="form-back" href="nuevoTurnoPaso1.html"><i class='bx bx-arrow-back'></i> Atras</a>
+        <p class="pasos">Mis turnos / Solicitar turno rapido / Datos del turno</p>
+        <a class="form-back" href="nuevoTurnoRapidoP1.html"><i class='bx bx-arrow-back'></i> Atras</a>
         <section class="data-complete-section">
             <h3 class="paso-title">2 - Datos del turno</h3>
             <form class="datos-form">
@@ -68,21 +69,7 @@
                 <div class="data-2-turnos">
                     <div class="agregar-campo">
                         <label class="label-fecha" for="fecha">Fecha</label>
-                        <select name="fecha" class="agregar-input">
-                            <option value="defalut" selected>Seleccionar fecha</option>
-                            <option value="26/07/2024">26/07/2024</option>
-                            <option value="27/07/2024">27/07/2024</option>
-                            <option value="01/08/2024">01/08/2024</option>
-                            <option value="05/08/2024">03/08/2024</option>
-                            <option value="05/08/2024">05/08/2024</option>
-                            <option value="07/08/2024">07/08/2024</option>
-                            <option value="11/08/2024">11/08/2024</option>
-                            <option value="15/08/2024">15/08/2024</option>
-                            <option value="18/08/2024">18/08/2024</option>
-                            <option value="21/08/2024">21/08/2024</option>
-                            <option value="26/08/2024">26/08/2024</option>
-                            <option value="01/09/2024">01/09/2024</option>
-                        </select>
+                        <input class="agregar-input" name="fecha" type="date" id="turno-fecha" min="" max="">
                     </div>
                     <div class="agregar-campo">
                         <label>Hora</label>
@@ -121,5 +108,6 @@
         </nav>
         <p class="footer-copy">&copy; VTV Website. Todos los derechos reservados. 2024.</p>
     </footer>
+
 </body>
 </html>
