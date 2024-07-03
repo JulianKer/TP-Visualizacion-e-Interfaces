@@ -23,3 +23,33 @@
 .constancia-link:hover {
     background-color: rgba(0, 0, 70, 0.679);
 }
+
+@media screen and (max-width: 1000px){
+    .constancia-img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .constancia-img {
+        width: 70%;
+    }
+
+    .constancia-link {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .constancia-img {
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width: 650px){
+    .constancia-img {
+        width: 80%;
+    }
+    
+}
