@@ -83,6 +83,60 @@ main {
     outline: none;
 }
 
-.select-dni {
-    width: 150px;
+@media screen and (min-width: 651px){
+    .data-2-paso2-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .agregar-bar {
+        display: none;
+    }
+    .pasos {
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    .datos-form {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .data-2-paso2-compu {
+        display: none;
+    }
+
+    .data-2-paso2-mobile {
+        display: flex;
+    }
+
+    .data-1, .data-2{
+        width: 60%;
+    }
+
+    .siguiente-btn {
+        position: static;
+    }
+
+    .paso-title {
+        margin-bottom: 1rem;
+    }
+
+    .dni-campo {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1rem;
+        width: 100%;
+    }
+
+    .main-vh-paso2 {
+        height: 110vh;
+    }
+
+    .datos-form-paso2-vh {
+        row-gap: 1rem;
+    }
 }
