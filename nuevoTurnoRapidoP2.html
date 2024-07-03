@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar Vehiculo - VTV</title>
+    <title>Solicitar turno - VTV</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/agregarVehiculo.css">
+    <link rel="stylesheet" href="css/nuevoTurno.css">
     <link rel="icon" href="iconos/logo_vtv_pestaña.png">
     <script src="js/salir.js" defer></script>
     <script src="js/nav.js" defer></script>
     <script src="js/agregar.js" defer></script>
+    <script src="js/turnoRapido.js" defer></script>
 </head>
 <body>
     <div class="menu-desplegable-oculto">
@@ -38,46 +40,45 @@
         </a>
     </header>
     <main class="main">
-        <p class="pasos">Mis vehiculos / Agregar vehiculo / Datos del titular</p>
-        <a class="form-back" href="agVehiculoPaso1.html"><i class='bx bx-arrow-back'></i> Atras</a>
+        <p class="pasos">Mis turnos / Solicitar turno rapido / Datos del turno</p>
+        <a class="form-back" href="nuevoTurnoRapidoP1.html"><i class='bx bx-arrow-back'></i> Atras</a>
         <section class="data-complete-section">
-            <h3 class="paso-title">2 - Datos del titular</h3>
+            <h3 class="paso-title">2 - Datos del turno</h3>
             <form class="datos-form">
                 <div class="data-1">
                     <div class="agregar-campo">
-                        <label>Nombre</label>
-                        <input class="agregar-input" type="text">
-                    </div>
-                    <div class="agregar-campo">
-                        <label>Apellido</label>
-                        <input class="agregar-input" type="text">
+                        <label for="planta">Planta</label>
+                        <select name="planta" class="agregar-input">
+                            <option value="defalut" selected>Seleccionar planta</option>
+                            <option value="Moron">Moron</option>
+                            <option value="Ramos Mejia">Ramos Mejia</option>
+                            <option value="Ituzaingo">Ituzaingo</option>
+                            <option value="Haedo">Haedo</option>
+                            <option value="San Justo">San Justo</option>
+                            <option value="Liniers">Liniers</option>
+                            <option value="Ciudadela">Ciudadela</option>
+                            <option value="Padua">Padua</option>
+                            <option value="Lanus">Lanus</option>
+                            <option value="Avellaneda">Avellaneda</option>
+                            <option value="Sarandi">Sarandi</option>
+                            <option value="Lujan">Lujan</option>
+                        </select>
                     </div>
                 </div>
-                <div class="agregar-bar"></div>
-                <div class="data-2">
-                    <div class="dni-campo">
-                        <div class="agregar-campo">
-                            <label for="input-tipo-dni">Tipo</label>
-                            <select name="tipo_dni" id="input-tipo-dni" class="select-dni agregar-input">
-                                <option value="defalut" selected>Tipo documento</option>
-                                <option value="DNI">DNI</option>
-                                <option value="CI">C.I</option>
-                                <option value="PASAPORTE">PASAPORTE</option>
-                            </select>
-                        </div>
-                        <div class="agregar-campo">
-                            <label>N°Documento</label>
-                            <input class="agregar-input" type="text">
-                        </div>
+                <div class="agregar-bar turnos-bar"></div>
+                <div class="data-2-turnos">
+                    <div class="agregar-campo">
+                        <label class="label-fecha" for="fecha">Fecha</label>
+                        <input class="agregar-input" name="fecha" type="date" id="turno-fecha" min="" max="">
                     </div>
                     <div class="agregar-campo">
-                        <label>Telefono de contacto</label>
-                        <input class="agregar-input" type="text">
+                        <label>Hora</label>
+                        <input class="agregar-input input-hora" type="time">
                     </div>
                 </div>
             </form>
             
-            <a id="agregar-vehiculo-btn" href="#" class="siguiente-btn">Agregar vehiculo</a>
+            <a id="agregar-turno-btn" href="#" class="siguiente-btn">Solicitar turno</a>
         </section>
     </main>
 
@@ -89,11 +90,12 @@
             <a href="ayuda.html" class="pop-up-btn">Cancelar</a>  <!-- ACA CAMBIAR EL HREF AL HOME CUANDO LO HAGA-->
         </section>
     </section>
-    <section id="popup-agregar-vehiculo" class="pop-up-salir">
+
+    <section id="popup-agregar-turno" class="pop-up-salir">
         <section class="pop-up">
             <i class='agregar-popup-icon bx bx-check-circle'></i>
-            <p class="agregar-popup-text">El vehiculo se ha agregado correctamente!</p>
-            <a class="pop-up-btn" href="misVehiculos.html">Avanzar</a>
+            <p class="agregar-popup-text">El turno se ha registrado correctamente!</p>
+            <a class="pop-up-btn" href="misTurnos.html">Avanzar</a>
         </section>
     </section>
 
@@ -106,5 +108,6 @@
         </nav>
         <p class="footer-copy">&copy; VTV Website. Todos los derechos reservados. 2024.</p>
     </footer>
+
 </body>
 </html>
