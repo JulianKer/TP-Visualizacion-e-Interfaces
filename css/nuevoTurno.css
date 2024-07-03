@@ -1,0 +1,50 @@
+.datos-form-turno {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.agregar-campo-turnos {
+    display: flex;
+    flex-direction: column;
+    row-gap: .6rem;
+}
+.agregar-vh-btn {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 7rem;
+    background-color: rgb(0, 0, 63);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 7px 50px;
+    transition: .4s;
+}
+
+.agregar-vh-btn:hover {
+    background-color: rgba(0, 0, 63, 0.695);
+}
+
+.datos-form-turnos {
+   height: 6rem;
+}
+
+.data {
+    width: 30%;
+}
+
+.input-hora {
+    padding: 9px;
+}
+
+.label-vehiculos {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.data-2-turnos {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+}
