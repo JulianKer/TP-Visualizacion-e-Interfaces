@@ -10,6 +10,7 @@
     <link rel="icon" href="iconos/logo_vtv_pestaña.png">
     <script src="js/salir.js" defer></script>
     <script src="js/nav.js" defer></script>
+    <script src="js/agregar.js" defer></script>
 </head>
 <body>
     <div class="menu-desplegable-oculto">
@@ -37,35 +38,46 @@
         </a>
     </header>
     <main class="main">
-        <p class="pasos">Mis vehiculos / Agregar vehiculo / Datos del vehiculo</p>
+        <p class="pasos">Mis vehiculos / Agregar vehiculo / Datos del titular</p>
         <a class="form-back" href="misVehiculos.html"><i class='bx bx-arrow-back'></i> Atras</a>
         <section class="data-complete-section">
-            <h3 class="paso-title">1 - Datos del vehiculo</h3>
+            <h3 class="paso-title">2 - Datos del titular</h3>
             <form class="datos-form">
                 <div class="data-1">
                     <div class="agregar-campo">
-                        <label>N° Chasis</label>
+                        <label>Nombre</label>
                         <input class="agregar-input" type="text">
                     </div>
                     <div class="agregar-campo">
-                        <label>Patente</label>
+                        <label>Apellido</label>
                         <input class="agregar-input" type="text">
                     </div>
                 </div>
                 <div class="agregar-bar"></div>
                 <div class="data-2">
-                    <div class="agregar-campo">
-                        <label>Marca</label>
-                        <input class="agregar-input" type="text">
+                    <div class="dni-campo">
+                        <div class="agregar-campo">
+                            <label for="input-tipo-dni">Tipo</label>
+                            <select name="tipo_dni" id="input-tipo-dni" class="select-dni agregar-input">
+                                <option value="defalut" selected>Tipo documento</option>
+                                <option value="DNI">DNI</option>
+                                <option value="CI">C.I</option>
+                                <option value="PASAPORTE">PASAPORTE</option>
+                            </select>
+                        </div>
+                        <div class="agregar-campo">
+                            <label>N°Documento</label>
+                            <input class="agregar-input" type="text">
+                        </div>
                     </div>
                     <div class="agregar-campo">
-                        <label>Modelo</label>
+                        <label>Telefono de contacto</label>
                         <input class="agregar-input" type="text">
                     </div>
                 </div>
             </form>
             
-            <a href="agVehiculoPaso2.html" class="siguiente-btn">Siguiente</a>
+            <a id="agregar-vehiculo-btn" href="#" class="siguiente-btn">Agregar vehiculo</a>
         </section>
     </main>
 
@@ -75,6 +87,13 @@
             <p class="pop-up-mensaje">¿Seguro desea salir?</p>
             <a href="index.html" class="pop-up-btn">Aceptar</a>  <!-- ACA CAMBIAR EL HREF AL HOME CUANDO LO HAGA-->
             <a href="ayuda.html" class="pop-up-btn">Cancelar</a>  <!-- ACA CAMBIAR EL HREF AL HOME CUANDO LO HAGA-->
+        </section>
+    </section>
+    <section id="popup-agregar-vehiculo" class="pop-up-salir">
+        <section class="pop-up">
+            <i class='agregar-popup-icon bx bx-check-circle'></i>
+            <p class="agregar-popup-text">El vehiculo se ha agregado correctamente!</p>
+            <a class="pop-up-btn" href="misVehiculos.html">Avanzar</a>
         </section>
     </section>
 
