@@ -33,6 +33,10 @@
 
 .login-form {
     width: 30%;
+
+    & .auth-btn{
+        margin-top: .7em;
+    }
 }
 
 .nombre-completo, .campo-password {
@@ -70,7 +74,7 @@
 }
 
 .auth-btn {
-    padding: 7px 0;
+    padding: .5em 0;
     width: 150px;
     background-color: rgba(1, 1, 66);
     color: #fff;
@@ -96,3 +100,24 @@
     color: rgb(1, 1, 66);
 }
 
+
+
+@media screen and (max-width: 835px) {
+    .login-form{
+        width: 60%;
+
+        & label{
+            font-size: 1.08rem;
+            margin: .7em 0 .3em 0;
+        }
+        input{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .login-form{
+        width: 100%;
+    }
+}
