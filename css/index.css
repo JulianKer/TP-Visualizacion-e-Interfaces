@@ -201,7 +201,7 @@ footer {
     padding: 2em;
 
     position: fixed;
-    top: -10em;
+    top: -12em;
     left: 0;
     z-index: 2;
 
@@ -211,6 +211,10 @@ footer {
     font-size: 1.2em;
 
     transition: all .3s ease-out;
+
+    & a{
+        padding: .2em;
+    }
 }
 
 .mostrar-menu{
