@@ -3,13 +3,13 @@
 }
 
 .contenedor-general{
-    border: 1px solid rgba(1, 1, 66, 0.456);
-    box-shadow: 0px 0px 2px 0px rgba(1, 1, 66, 0.189);
+    border: 1px solid rgba(1, 1, 66, 0.189);
+    box-shadow: 0px 0px 1em 0px rgba(1, 1, 66, 0.189);
     padding: 1em;
 }
 
 .contenedor-col{
-    margin: 2em 0;
+    margin: 2em 0 1em 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em 10em;
@@ -28,10 +28,15 @@
 }
 
 .titulo-mis-datos{
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-align: center;
     cursor: default;
-    margin-top: 1em;
+    margin-top: 1em; 
+
+    & span{
+        text-decoration: underline rgb(1, 1, 66);
+        text-underline-offset: 4px;
+    }
 }
 
 
@@ -44,6 +49,7 @@
 
 label{
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .input-nombre-apellido, 
@@ -53,8 +59,8 @@ label{
 .input-contraseña,
 .input-repetir-contraseña{
     background-color: #fff;
-    padding: .3rem .5rem;
-    font-size: .9rem;
+    padding: .5rem;
+    font-size: 1rem;
     border: 1px solid rgba(1, 1, 66, 0.456);
     transition: .4s;
 }
@@ -80,7 +86,7 @@ label{
 
 .perfil-btn{
     width: 307px;
-    padding: 7px 0;
+    padding: .6em 0;
     background-color: rgba(1, 1, 66);
     color: #fff;
     font-size: 1rem;
@@ -102,6 +108,11 @@ label{
             align-items: center;
         }
     }
+
+    .contenedor-de-input{
+        width: 100%;
+        padding: 0 2em;
+    }
     .contenedor-btns{
         grid-column: 1/2;
         flex-direction: column-reverse;
@@ -112,7 +123,11 @@ label{
 
 @media screen and (max-width: 430px) {
     .main{
-        padding: 3em;
+        padding: 2.2em;
+    }
+
+    .titulo-mis-datos{
+        margin-top: .5em;
     }
 
     .contenedor-de-input{
@@ -123,8 +138,3 @@ label{
         width: 100%;
     }
 }
-
-
-
-/*-------------------- POP UP, QUE PODRIA ESTAR EN EL INDEX YA QUE VARIAS PAGS LO VAN A USAR ---------------------------*/
-/*-------------------- PERO PARA NO HACER LIO, LO DEJO ACA PRIMERO Y DESPUES DE HACER PULL VEO DONDE LO DEJO ----------*/

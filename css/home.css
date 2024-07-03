@@ -15,7 +15,9 @@
 
 .que-es-vtv,
 .contactos{
-    background-color: rgba(1, 1, 80, 0.168);
+    /* background-color: rgba(1, 1, 80, 0.168); */
+    border: 1px solid rgba(1, 1, 66, 0.189);
+    box-shadow: 0px 0px 1em 0px rgba(1, 1, 66, 0.189);
     padding: 3rem;
     
     & h4{
@@ -58,6 +60,7 @@
     a{
         color: #000;
         text-align: center;
+        margin-bottom: .5em;
     }
 
     .wsp:hover{
@@ -82,7 +85,7 @@
 
 
 .fila-2-btns{
-    margin-top: 1em;
+    margin-top: 2em;
 
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -146,7 +149,7 @@
 
 .sec-eframe{
     position: absolute;
-    bottom: -13.2em;
+    bottom: -14.2em;
     left: 0;
 
     width: 100%;
@@ -195,6 +198,7 @@
 .btn-turno-rapido:hover{
     color: #fff;
     background-color: rgba(1, 1, 66, 0.729);
+    border: solid 2px #464675;
     transform: scale(1.02);
 }
 
@@ -331,10 +335,9 @@ tbody tr:hover{
     }
 }
 
-
 @media screen and (max-width: 430px) {
     .main{
-        padding: 3em;
+        padding: 2em;
     }
 
     .que-es-vtv h4{
