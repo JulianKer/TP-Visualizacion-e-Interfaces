@@ -72,3 +72,17 @@ main {
 .siguiente-btn:hover {
     background-color: rgba(0, 0, 63, 0.695);
 }
+
+.dni-campo {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.agregar-input:focus {
+    outline: none;
+}
+
+.select-dni {
+    width: 150px;
+}

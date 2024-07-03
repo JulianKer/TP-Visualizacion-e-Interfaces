@@ -192,6 +192,15 @@ footer {
 .pop-up-btn:hover {
     background-color: rgba(1, 1, 66, 0.729);
 }
+
+.agregar-popup-icon {
+    font-size: 5rem;
+}
+
+.agregar-popup-text {
+    font-size: 1.1rem;
+    text-align: center;
+}
 /*-------------------------------------------------*/
 
 
