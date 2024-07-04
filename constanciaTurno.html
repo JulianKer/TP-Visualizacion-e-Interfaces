@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="css/constancia.css">
     <link rel="icon" href="iconos/logo_vtv_pestaña.png">
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <script src="js/popUp.js" defer></script>
+    <script src="js/agregar.js" defer></script>
     <script src="js/salir.js" defer></script>
     <script src="js/nav.js" defer></script>
 </head>
@@ -40,8 +43,13 @@
 
 
     <main class="main main-constancia">
+        <a class="form-back" href="nuevoTurnoPaso2.html"><i class='bx bx-arrow-back'></i> Atrás</a>
+        <h2>Confirmar datos</h2>
         <img class="constancia-img" src="iconos/img/Captura de pantalla 2024-07-03 172649.png" alt="imagen constancia VTV">
-        <a class="constancia-link" target="_blank" href="constancia.pdf">Descargar constancia</a>
+        <div class="contenedor-botones">
+            <a class="constancia-link" target="_blank" href="misTurnos.html">Cancelar</a>
+            <a class="constancia-link" id="agregar-turno-btn" href="#">Confirmar</a>
+        </div>
     </main>
 
     <section class="pop-up-salir">
@@ -50,6 +58,15 @@
             <p class="pop-up-mensaje">¿Seguro desea salir?</p>
             <a href="index.html" class="pop-up-btn">Aceptar</a> 
             <a href="constanciaTurno.html" class="pop-up-btn">Cancelar</a> 
+        </section>
+    </section>
+
+    <section id="popup-agregar-turno" class="pop-up-salir">
+        <section class="pop-up">
+            <i class='agregar-popup-icon bx bx-check-circle'></i>
+            <p class="agregar-popup-text">El turno se ha registrado correctamente!</p>
+            <a class="pop-up-btn" href="constancia.pdf" target="_blank">Descargar en PDF<i class='bx bxs-download' style='color:#ffffff; margin-left: 1em;'></i></a>
+            <a class="pop-up-btn" href="misTurnos.html">Aceptar</a>
         </section>
     </section>
 
