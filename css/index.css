@@ -90,8 +90,17 @@ body {
 
 .nav {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
 }
+
+/*------------ este es cuando el nav link esta seleccionado -----------*/
+.seleccionado{
+    text-decoration: underline 5px #fff;
+    text-underline-offset: 1.1em;
+}
+/* .seleccionado:hover{
+    text-decoration-color: #A3A3BB;
+} */
 
 
 footer {
