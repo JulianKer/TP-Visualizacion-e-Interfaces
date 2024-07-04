@@ -122,6 +122,19 @@
     .data-1-turno-p2 {
         width: 82%;
     }
+
+    .data-2-turnos{
+        width: 100%;
+        flex-direction: column;
+
+        & .agregar-campo{
+            width: 82%;
+        }
+    }
+
+    .siguiente-btn{
+        right: 5em;
+    }
 }
 
 
